@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body style="background-color: black;color: white;">
+    <h1>Welcome, {{ username }}</h1>
+    <a href="{{ url_for('logout') }}">
+        <button class="register-btn">Logout</button>
+
+<style>
+  .register-btn {
+    background: linear-gradient(135deg, #b33674, #c258a7);
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .register-btn:hover {
+    background: linear-gradient(135deg, #c258a7, #b33674);
+    transform: scale(1.05);
+  }
+
+  .register-btn:active {
+    transform: scale(0.95);
+  }
+</style>
+
+    </a>
+    <br><br><br><br><br>
+    <label for="Admin">do you want to visit the admin panel ? </label>
+<a href="http://127.0.0.1:5000/adminpagehash69813P398JFH8ERUSER341DDFI4KEFF" style="text-decoration: none;color: rgb(212, 151, 151);">here!</a>
+    <br>
+    <b>make sure your logged in as admin.</b>
+</body>
+</html>

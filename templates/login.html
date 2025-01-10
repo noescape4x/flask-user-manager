@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+</head>
+<body style="background-color: black;color: white;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    <h2>Login page</h2>
+    <form method="POST">
+        <label for="username">username :</label>
+        <input type="text" name="username" placeholder="username" id="username" required style="border: none;font-size: 120%;">
+        <br><br>
+        <label for="password">password :</label>
+        <input type="password" name="password" placeholder="password" id="password" required  maxlength="36" style="border: none;font-size: 120%;">
+        <br><br>
+        <button type="submit" style="border: none;">Login</button>
+        <br><br>
+    </form>
+    <a href="{{ url_for('register') }}" style="text-decoration: none;color: rgb(199, 174, 174);">don't have an account? register</a>
+</body>
+</html>

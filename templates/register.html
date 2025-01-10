@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body style="background-color: black;color: rgb(255, 255, 255);font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    <h2>Register page
+    </h2>
+    <hr>
+    <form method="POST">
+        <label for="username">username :</label>
+        <input type="text" name="username" placeholder="Username" required id="username" style="border: none;font-size: 120%;"> 
+        <br><br>
+        <label for="password">password :</label>
+        <input type="password" name="password" placeholder="Password" required id="password"  maxlength="36" style="border: none;font-size: 120%;">
+        <br><br>
+        <button type="submit" style="border: none;">Register</button>
+    </form>
+    <br>
+    <a href="{{ url_for('login') }}" style="text-decoration: none;color: rgb(202, 156, 156);">Already have an account? Login</a>
+</body>
+</html>
